@@ -1,0 +1,37 @@
+{
+  "name": "fn-pipe",
+  "version": "1.0.0",
+  "description": "Pipe function for function composition",
+  "main": "pipe.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
+  },
+  "jest": {
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZAKdev/fn-pipe.git"
+  },
+  "keywords": [
+    "function",
+    "composition",
+    "pipeline",
+    "promises"
+  ],
+  "author": "Zain Ahmed Khan <zainahmedkhan@gmail.com> (https://github.com/ZAKdev/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZAKdev/fn-pipe/issues"
+  },
+  "homepage": "https://github.com/ZAKdev/fn-pipe#readme",
+  "devDependencies": {
+    "babel-jest": "^22.1.0",
+    "jest": "^22.1.4"
+  }
+}
