@@ -12,9 +12,6 @@
     },
     "moduleFileExtensions": [
       "js"
-    ],
-    "unmockedModulePathPatterns": [
-      "./__tests__/mock.js"
     ]
   },
   "repository": {
