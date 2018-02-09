@@ -12,6 +12,9 @@
     },
     "moduleFileExtensions": [
       "js"
+    ],
+    "unmockedModulePathPatterns": [
+      "./__tests__/mock.js"
     ]
   },
   "repository": {
@@ -19,10 +22,11 @@
     "url": "git+https://github.com/ZAKdev/fn-pipe.git"
   },
   "keywords": [
-    "function",
-    "composition",
+    "function-composition",
     "pipeline",
-    "promises"
+    "resolve-promises",
+    "readable-code",
+    "design-pattern"
   ],
   "author": "Zain Ahmed Khan <zainahmedkhan@gmail.com> (https://github.com/ZAKdev/)",
   "license": "ISC",
@@ -32,6 +36,7 @@
   "homepage": "https://github.com/ZAKdev/fn-pipe#readme",
   "devDependencies": {
     "babel-jest": "^22.1.0",
+    "babel-preset-es2015": "^6.24.1",
     "jest": "^22.1.4"
   }
 }

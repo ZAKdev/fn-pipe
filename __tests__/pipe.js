@@ -1,4 +1,5 @@
-import { pipe } from './../pipe'
+import { pipe } from './../pipe';
+import { customPromise, myOwnFunc } from './../__mocks__/functions';  
 
 const numbers = [1, 2, 3, 4, 5];
 const newNumbers = pipe(
@@ -7,10 +8,19 @@ const newNumbers = pipe(
   num => num.map(n => n + 1)
 )(numbers)
 
+const promise = pipe(
+  customPromise,
+  myOwnFunc
+)(numbers)
+
 describe('pipe function', () => {
 
-  it('first param should contain array', () => {
-    expect(newNumbers).anything()
+  it('should return an array', () => {
+    expect(newNumbers).toEqual([5, 7, 9, 11, 13])
+  })
+
+  it('should return promise and resolve it', () => {
+    expect(promise).resolves.toEqual([5, 7, 11, 13])
   })
 
 })
