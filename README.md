@@ -61,7 +61,7 @@ In pipe, if any function has promise so pipe will return a new promise
     myOwnFn
   )(numbers)
   // return new promise
-  newNumbers
+  promise
     .then(res => console.log(res)) // [1, 2, 3, 4]
     .catch(err => console.log(err))
 ```
