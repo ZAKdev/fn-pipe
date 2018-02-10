@@ -12,6 +12,8 @@ Pipe is a function where you can pass multiple functions with first function pay
 It is very easy to read and write a single pipe like below.
 
 ```javascript
+  import { pipe } from 'fn-pipe';
+
   const numbers = [1, 2, 3, 4, 5];
   const newNumbers = pipe(
     num => num.map(n => n + 1),
@@ -24,6 +26,8 @@ It is very easy to read and write a single pipe like below.
 So in real world you can simply compose your functions in pipe like below
 
 ```javascript
+  import { pipe } from 'fn-pipe';
+
   const userPipe = pipe(
     getUserById,
     getUserHistory,
@@ -36,6 +40,8 @@ So in real world you can simply compose your functions in pipe like below
 In pipe, if any function has promise so pipe will return a new promise
 
 ```javascript
+  import { pipe } from 'fn-pipe';
+
   // if you have a promise
   const myPromise = (num) => new Promise((resolve, reject) => {
     if(true){
