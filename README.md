@@ -21,7 +21,7 @@ It is very easy to read and write a single pipe like below.
   // return [5, 7, 9, 11, 13]
 ```
 
-So in real world you can simpley compose your functions in pipe like below
+So in real world you can simply compose your functions in pipe like below
 
 ```javascript
   const userPipe = pipe(
